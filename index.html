@@ -125,7 +125,7 @@
                         <span class="mx-3 my-2 text-zinc-500">//</span>
                         <a href="./whoami.html" class="mx-3 my-2 hover:text-purple-400 transition-colors transform hover:scale-110 duration-200">whoami</a>
                         <span class="mx-3 my-2 text-zinc-500">//</span>
-                        <a href="#" class="mx-3 my-2 hover:text-green-400 transition-colors transform hover:scale-110 duration-200">project</a>
+                        <a href="#" class="mx-3 my-2 hover:text-green-400 transition-colors transform hover:scale-110 duration-200" >project</a>
                         <span class="mx-3 my-2 text-zinc-500">//</span>
                         <a href="#" class="mx-3 my-2 hover:text-yellow-400 transition-colors transform hover:scale-110 duration-200">blogs</a>
                         <span class="mx-3 my-2 text-zinc-500">//</span>
@@ -142,9 +142,9 @@
                 document.getElementById("typing-effect").innerHTML = text.substring(0, i+1) + '_';
                 setTimeout(function() {
                     typeWriter(text, i + 1, fnCallback)
-                }, 300); // Changed from 100 to 300 to slow down 3 times
+                }, 300); // Change to more slow UwU
             } else if (typeof fnCallback == 'function') {
-                // Remove the '_' when typing is complete
+                // Remove the '_' 
                 document.getElementById("typing-effect").innerHTML = text;
                 setTimeout(fnCallback, 700);
             }
@@ -152,7 +152,7 @@
 
         function startTyping() {
             typeWriter("Tuan's me", 0, function() {
-                // Typing is complete
+                // result
             });
         }
 
