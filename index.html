@@ -142,9 +142,8 @@
                 document.getElementById("typing-effect").innerHTML = text.substring(0, i+1) + '_';
                 setTimeout(function() {
                     typeWriter(text, i + 1, fnCallback)
-                }, 300); // Change to more slow UwU
+                }, 300);
             } else if (typeof fnCallback == 'function') {
-                // Remove the '_' 
                 document.getElementById("typing-effect").innerHTML = text;
                 setTimeout(fnCallback, 700);
             }
@@ -152,11 +151,10 @@
 
         function startTyping() {
             typeWriter("Tuan's me", 0, function() {
-                // result
+                
             });
         }
 
-        // Start the typing effect when the page loads
         window.onload = startTyping;
     </script>
 </body>
